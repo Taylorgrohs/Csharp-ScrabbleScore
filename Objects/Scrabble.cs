@@ -7,6 +7,7 @@ namespace ScrabbleScore
   {
     public int Score(string word)
     {
+      string outputWord = word;
       int score = 0;
       char[] onePoint = {'a', 'e', 'i', 'o', 'u', 'l', 'n', 'r', 's', 't'};
       char[] twoPoint = {'d', 'g'};

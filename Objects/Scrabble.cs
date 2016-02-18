@@ -25,6 +25,13 @@ namespace ScrabbleScore
             score += 1;
           }
         }
+        foreach (char x in twoPoint)
+        {
+          if(i == x)
+          {
+            score += 2;
+          }
+        }
       }
       return score;
     }

@@ -17,5 +17,11 @@ namespace ScrabbleScore
       Scrabble newScrabble = new Scrabble();
       Assert.Equal(2, newScrabble.Score("AT"));
     }
+    [Fact]
+    public void Score_good_equals_6()
+    {
+      Scrabble newScrabble = new Scrabble();
+      Assert.Equal(6, newScrabble.Score("good"));
+    }
   }
 }

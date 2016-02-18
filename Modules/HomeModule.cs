@@ -15,7 +15,7 @@ namespace TheRocksScrabbleScore
       Post["/"] = _ =>
       {
         Scrabble newScrabble = new Scrabble();
-        int score = newScrabble.Score(Request.Form["input"]);
+        string score = newScrabble.Score(Request.Form["input"]);
         return View["index.cshtml", score];
       };
     }

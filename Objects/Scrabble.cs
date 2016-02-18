@@ -5,7 +5,7 @@ namespace ScrabbleScore
 {
   public class Scrabble
   {
-    public int Score(string word)
+    public string Score(string word)
     {
       string outputWord = word;
       int score = 0;
@@ -69,7 +69,8 @@ namespace ScrabbleScore
           }
         }
       }
-      return score;
+      string result = score.ToString();
+      return word + " is " + score + " points";
     }
   }
 }

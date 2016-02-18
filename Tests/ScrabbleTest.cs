@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System;
 namespace ScrabbleScore
 {
-  public class ScrabbleScore
+  public class ScrabbleScoreTest
   {
     [Fact]
     public void Score_A_Equals_1()
@@ -11,5 +11,6 @@ namespace ScrabbleScore
       Scrabble newScrabble = new Scrabble();
       Assert.Equal(1, newScrabble.Score("a"));
     }
+
   }
 }

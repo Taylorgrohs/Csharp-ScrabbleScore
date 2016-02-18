@@ -7,7 +7,7 @@ namespace ScrabbleScore
   {
     public int Score(string word)
     {
-    return 2;
+    return 1;
     }
   }
 }

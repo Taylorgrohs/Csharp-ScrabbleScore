@@ -32,6 +32,13 @@ namespace ScrabbleScore
             score += 2;
           }
         }
+        foreach (char x in threePoint)
+        {
+          if(i == x)
+          {
+            score += 3;
+          }
+        }
       }
       return score;
     }

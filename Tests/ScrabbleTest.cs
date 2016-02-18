@@ -35,5 +35,23 @@ namespace ScrabbleScore
       Scrabble newScrabble= new Scrabble();
       Assert.Equal(12, newScrabble.Score("YeLlOw"));
     }
+    [Fact]
+    public void Score_HaCk_equals_13()
+    {
+      Scrabble newScrabble= new Scrabble();
+      Assert.Equal(13, newScrabble.Score("hAcK"));
+    }
+    [Fact]
+    public void Score_JINX_equals_18()
+    {
+      Scrabble newScrabble= new Scrabble();
+      Assert.Equal(18, newScrabble.Score("jinx"));
+    }
+    [Fact]
+    public void Score_quiz_equals_22()
+    {
+      Scrabble newScrabble= new Scrabble();
+      Assert.Equal(22, newScrabble.Score("quiz"));
+    }
   }
 }

@@ -39,6 +39,34 @@ namespace ScrabbleScore
             score += 3;
           }
         }
+        foreach (char x in fourPoint)
+        {
+          if(i == x)
+          {
+            score += 4;
+          }
+        }
+        foreach (char x in fivePoint)
+        {
+          if(i == x)
+          {
+            score += 5;
+          }
+        }
+        foreach (char x in eightPoint)
+        {
+          if(i == x)
+          {
+            score += 8;
+          }
+        }
+        foreach (char x in tenPoint)
+        {
+          if(i == x)
+          {
+            score += 10;
+          }
+        }
       }
       return score;
     }
